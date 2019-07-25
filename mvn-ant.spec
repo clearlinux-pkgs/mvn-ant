@@ -4,21 +4,23 @@
 #
 Name     : mvn-ant
 Version  : 1.9.1
-Release  : 5
+Release  : 6
 URL      : https://repo1.maven.org/maven2/org/apache/ant/ant/1.9.1/ant-1.9.1.jar
 Source0  : https://repo1.maven.org/maven2/org/apache/ant/ant/1.9.1/ant-1.9.1.jar
-Source1  : https://repo1.maven.org/maven2/org/apache/ant/ant-parent/1.9.1/ant-parent-1.9.1.pom
-Source2  : https://repo1.maven.org/maven2/org/apache/ant/ant-parent/1.9.3/ant-parent-1.9.3.pom
-Source3  : https://repo1.maven.org/maven2/org/apache/ant/ant-parent/1.9.4/ant-parent-1.9.4.pom
-Source4  : https://repo1.maven.org/maven2/org/apache/ant/ant/1.8.1/ant-1.8.1.jar
-Source5  : https://repo1.maven.org/maven2/org/apache/ant/ant/1.8.1/ant-1.8.1.pom
-Source6  : https://repo1.maven.org/maven2/org/apache/ant/ant/1.8.2/ant-1.8.2.jar
-Source7  : https://repo1.maven.org/maven2/org/apache/ant/ant/1.8.2/ant-1.8.2.pom
-Source8  : https://repo1.maven.org/maven2/org/apache/ant/ant/1.9.1/ant-1.9.1.pom
-Source9  : https://repo1.maven.org/maven2/org/apache/ant/ant/1.9.3/ant-1.9.3.jar
-Source10  : https://repo1.maven.org/maven2/org/apache/ant/ant/1.9.3/ant-1.9.3.pom
-Source11  : https://repo1.maven.org/maven2/org/apache/ant/ant/1.9.4/ant-1.9.4.jar
-Source12  : https://repo1.maven.org/maven2/org/apache/ant/ant/1.9.4/ant-1.9.4.pom
+Source1  : https://repo1.maven.org/maven2/org/apache/ant/ant-parent/1.8.1/ant-parent-1.8.1.pom
+Source2  : https://repo1.maven.org/maven2/org/apache/ant/ant-parent/1.8.2/ant-parent-1.8.2.pom
+Source3  : https://repo1.maven.org/maven2/org/apache/ant/ant-parent/1.9.1/ant-parent-1.9.1.pom
+Source4  : https://repo1.maven.org/maven2/org/apache/ant/ant-parent/1.9.3/ant-parent-1.9.3.pom
+Source5  : https://repo1.maven.org/maven2/org/apache/ant/ant-parent/1.9.4/ant-parent-1.9.4.pom
+Source6  : https://repo1.maven.org/maven2/org/apache/ant/ant/1.8.1/ant-1.8.1.jar
+Source7  : https://repo1.maven.org/maven2/org/apache/ant/ant/1.8.1/ant-1.8.1.pom
+Source8  : https://repo1.maven.org/maven2/org/apache/ant/ant/1.8.2/ant-1.8.2.jar
+Source9  : https://repo1.maven.org/maven2/org/apache/ant/ant/1.8.2/ant-1.8.2.pom
+Source10  : https://repo1.maven.org/maven2/org/apache/ant/ant/1.9.1/ant-1.9.1.pom
+Source11  : https://repo1.maven.org/maven2/org/apache/ant/ant/1.9.3/ant-1.9.3.jar
+Source12  : https://repo1.maven.org/maven2/org/apache/ant/ant/1.9.3/ant-1.9.3.pom
+Source13  : https://repo1.maven.org/maven2/org/apache/ant/ant/1.9.4/ant-1.9.4.jar
+Source14  : https://repo1.maven.org/maven2/org/apache/ant/ant/1.9.4/ant-1.9.4.pom
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : Apache-2.0
@@ -43,41 +45,47 @@ data components for the mvn-ant package.
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/ant/ant/1.9.1
 cp %{SOURCE0} %{buildroot}/usr/share/java/.m2/repository/org/apache/ant/ant/1.9.1/ant-1.9.1.jar
 
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/ant/ant-parent/1.8.1
+cp %{SOURCE1} %{buildroot}/usr/share/java/.m2/repository/org/apache/ant/ant-parent/1.8.1/ant-parent-1.8.1.pom
+
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/ant/ant-parent/1.8.2
+cp %{SOURCE2} %{buildroot}/usr/share/java/.m2/repository/org/apache/ant/ant-parent/1.8.2/ant-parent-1.8.2.pom
+
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/ant/ant-parent/1.9.1
-cp %{SOURCE1} %{buildroot}/usr/share/java/.m2/repository/org/apache/ant/ant-parent/1.9.1/ant-parent-1.9.1.pom
+cp %{SOURCE3} %{buildroot}/usr/share/java/.m2/repository/org/apache/ant/ant-parent/1.9.1/ant-parent-1.9.1.pom
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/ant/ant-parent/1.9.3
-cp %{SOURCE2} %{buildroot}/usr/share/java/.m2/repository/org/apache/ant/ant-parent/1.9.3/ant-parent-1.9.3.pom
+cp %{SOURCE4} %{buildroot}/usr/share/java/.m2/repository/org/apache/ant/ant-parent/1.9.3/ant-parent-1.9.3.pom
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/ant/ant-parent/1.9.4
-cp %{SOURCE3} %{buildroot}/usr/share/java/.m2/repository/org/apache/ant/ant-parent/1.9.4/ant-parent-1.9.4.pom
+cp %{SOURCE5} %{buildroot}/usr/share/java/.m2/repository/org/apache/ant/ant-parent/1.9.4/ant-parent-1.9.4.pom
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/ant/ant/1.8.1
-cp %{SOURCE4} %{buildroot}/usr/share/java/.m2/repository/org/apache/ant/ant/1.8.1/ant-1.8.1.jar
+cp %{SOURCE6} %{buildroot}/usr/share/java/.m2/repository/org/apache/ant/ant/1.8.1/ant-1.8.1.jar
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/ant/ant/1.8.1
-cp %{SOURCE5} %{buildroot}/usr/share/java/.m2/repository/org/apache/ant/ant/1.8.1/ant-1.8.1.pom
+cp %{SOURCE7} %{buildroot}/usr/share/java/.m2/repository/org/apache/ant/ant/1.8.1/ant-1.8.1.pom
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/ant/ant/1.8.2
-cp %{SOURCE6} %{buildroot}/usr/share/java/.m2/repository/org/apache/ant/ant/1.8.2/ant-1.8.2.jar
+cp %{SOURCE8} %{buildroot}/usr/share/java/.m2/repository/org/apache/ant/ant/1.8.2/ant-1.8.2.jar
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/ant/ant/1.8.2
-cp %{SOURCE7} %{buildroot}/usr/share/java/.m2/repository/org/apache/ant/ant/1.8.2/ant-1.8.2.pom
+cp %{SOURCE9} %{buildroot}/usr/share/java/.m2/repository/org/apache/ant/ant/1.8.2/ant-1.8.2.pom
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/ant/ant/1.9.1
-cp %{SOURCE8} %{buildroot}/usr/share/java/.m2/repository/org/apache/ant/ant/1.9.1/ant-1.9.1.pom
+cp %{SOURCE10} %{buildroot}/usr/share/java/.m2/repository/org/apache/ant/ant/1.9.1/ant-1.9.1.pom
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/ant/ant/1.9.3
-cp %{SOURCE9} %{buildroot}/usr/share/java/.m2/repository/org/apache/ant/ant/1.9.3/ant-1.9.3.jar
+cp %{SOURCE11} %{buildroot}/usr/share/java/.m2/repository/org/apache/ant/ant/1.9.3/ant-1.9.3.jar
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/ant/ant/1.9.3
-cp %{SOURCE10} %{buildroot}/usr/share/java/.m2/repository/org/apache/ant/ant/1.9.3/ant-1.9.3.pom
+cp %{SOURCE12} %{buildroot}/usr/share/java/.m2/repository/org/apache/ant/ant/1.9.3/ant-1.9.3.pom
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/ant/ant/1.9.4
-cp %{SOURCE11} %{buildroot}/usr/share/java/.m2/repository/org/apache/ant/ant/1.9.4/ant-1.9.4.jar
+cp %{SOURCE13} %{buildroot}/usr/share/java/.m2/repository/org/apache/ant/ant/1.9.4/ant-1.9.4.jar
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/ant/ant/1.9.4
-cp %{SOURCE12} %{buildroot}/usr/share/java/.m2/repository/org/apache/ant/ant/1.9.4/ant-1.9.4.pom
+cp %{SOURCE14} %{buildroot}/usr/share/java/.m2/repository/org/apache/ant/ant/1.9.4/ant-1.9.4.pom
 
 
 %files
@@ -85,6 +93,8 @@ cp %{SOURCE12} %{buildroot}/usr/share/java/.m2/repository/org/apache/ant/ant/1.9
 
 %files data
 %defattr(-,root,root,-)
+/usr/share/java/.m2/repository/org/apache/ant/ant-parent/1.8.1/ant-parent-1.8.1.pom
+/usr/share/java/.m2/repository/org/apache/ant/ant-parent/1.8.2/ant-parent-1.8.2.pom
 /usr/share/java/.m2/repository/org/apache/ant/ant-parent/1.9.1/ant-parent-1.9.1.pom
 /usr/share/java/.m2/repository/org/apache/ant/ant-parent/1.9.3/ant-parent-1.9.3.pom
 /usr/share/java/.m2/repository/org/apache/ant/ant-parent/1.9.4/ant-parent-1.9.4.pom
