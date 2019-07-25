@@ -4,7 +4,7 @@
 #
 Name     : mvn-ant
 Version  : 1.9.1
-Release  : 6
+Release  : 7
 URL      : https://repo1.maven.org/maven2/org/apache/ant/ant/1.9.1/ant-1.9.1.jar
 Source0  : https://repo1.maven.org/maven2/org/apache/ant/ant/1.9.1/ant-1.9.1.jar
 Source1  : https://repo1.maven.org/maven2/org/apache/ant/ant-parent/1.8.1/ant-parent-1.8.1.pom
