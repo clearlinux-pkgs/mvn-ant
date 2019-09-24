@@ -2,3 +2,5 @@
 apache-hadoop
 apache-spark
 cassandra
+gradle
+rabbitmq-java-client
